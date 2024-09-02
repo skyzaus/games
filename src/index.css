@@ -1,0 +1,29 @@
+/* index.css */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Add some additional Frozen-themed styles */
+button {
+  background-color: #7EC8E3; /* Light icy blue */
+  color: #fff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 300ms, transform 300ms;
+}
+
+button:hover {
+  background-color: #4A90E2; /* Darker icy blue */
+  transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+h1, h2, h3 {
+  font-family: 'Elsie', cursive;
+  color: #fff; /* White text for headings */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow for readability */
+}

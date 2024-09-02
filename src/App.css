@@ -1,0 +1,59 @@
+/* app.css */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: #4A90E2; /* Ice-blue color for text */
+  font-family: 'Elsie', cursive; /* A font with a fairytale vibe */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #B0E0E6); /* Lighter blue for Frozen effect */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #87CEEB); /* Sky blue for React logo */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.8); /* White with slight transparency */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+}
+
+.read-the-docs {
+  color: #4A90E2; /* Matching ice-blue color */
+}
+
+body {
+  background-image: url('https://wallpapercave.com/wp/wp1987848.png'); /* Frozen-themed background */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Background stays fixed when scrolling */
+  color: #fff; /* Default text color */
+}
