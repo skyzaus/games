@@ -6,37 +6,34 @@ import ColorGame from "./ColorGame";
 import DiceCountGame from "./DiceCountGame";
 import ShapeMatchingGame from "./ShapeMatchingGame";
 import { CorrectAnswersProvider } from "./CorrectAnswersContext"; // Import the provider
-import "./App.css";
+import './App.css';
 import Navbar from "./Navbar";
+import NumberSequenceGame from "./NumberSequenceGame";
+import ColorMatchingGame from "./ColorMatchingGame";
+import CountingGame from "./CountingGame";
+import AnimalSoundsGame from "./AnimalSoundsGame";
 
 const App = () => {
   return (
     <CorrectAnswersProvider>
       <div>
-        <strong>
-          <h1 className="center">Sky's & Sasha's school</h1>
-        </strong>
-        <Navbar />3
+        
+        <strong><h1 className="center">Sky's & Sasha's school</h1></strong>
+        <Navbar/>
         <div style={styles.appContainer}>
-          <div style={styles.gameContainer}>
-            <MathGame />
-          </div>
-          <div style={styles.gameContainer}>
-            <SubtractionGame />
-          </div>
-          <div style={styles.gameContainer}>
-            <WordGame />
-          </div>
-          <div style={styles.gameContainer}>
-            <ColorGame />
-          </div>
-          <div style={styles.gameContainer}>
-            <DiceCountGame />
-          </div>
-          <div style={styles.gameContainer}>
-            <ShapeMatchingGame />
-          </div>
+       
+          <div style={styles.gameContainer}><MathGame /></div>
+          <div style={styles.gameContainer}><SubtractionGame /></div>
+          <div style={styles.gameContainer}><WordGame /></div>
+          <div style={styles.gameContainer}><ColorGame /></div>
+          <div style={styles.gameContainer}><DiceCountGame /></div>
+          <div style={styles.gameContainer}><ShapeMatchingGame /></div>
+          <div style={styles.gameContainer}><NumberSequenceGame/></div>
+          <div style={styles.gameContainer}><ColorMatchingGame/></div>
+          <div style={styles.gameContainer}><CountingGame/></div>
+          <div style={styles.gameContainer}><AnimalSoundsGame/></div>
         </div>
+        <Navbar/>
       </div>
     </CorrectAnswersProvider>
   );
